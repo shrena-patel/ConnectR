@@ -1,3 +1,13 @@
+# ConnectR
+
+### Connecting recruiters with candidates.
+
+A professional matchmaking app.
+
+
+
+---
+
 # Full Stack Boilerplate
 
 ## The Tech

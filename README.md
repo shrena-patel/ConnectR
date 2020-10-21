@@ -1,8 +1,18 @@
 # ConnectR
 
 ### Connecting recruiters with candidates.
-
 A professional matchmaking app.
+
+---
+
+Migrations: 
+
+Candidate:
+role_seeking - 'string', current_role - 'string', experience_years - 'integer', locations - 'string', qualifications - 'string', work_rights - 'string'
+
+Employer:
+name - 'string', company_size - 'integer', expertise - 'string', locations - 'string'
+
 
 
 

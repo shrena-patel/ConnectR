@@ -11,3 +11,23 @@ $family-sans-serif: "Lato", sans-serif;
 
 // Update some of Bulma's component variables
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.button + .button {
+    margin-top: 1rem;
+}

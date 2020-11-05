@@ -5,6 +5,8 @@ import {connect} from 'react-redux'
 import Login from './Login'
 import Register from './Register'
 import Nav from './Nav'
+import Home from './Home'
+
 import { checkAuth } from '../actions/auth'
 
 export class App extends React.Component {
@@ -22,7 +24,7 @@ export class App extends React.Component {
           <div className="hero is-small is-primary">
             <div className="hero-body has-text-centered">
               <Link to='/' className="">
-                <h1 className="title is-1">Greetings!</h1>
+                <h1 className="title is-1">ConnectR</h1>
               </Link>
               <Route path="/" component={Nav} />
             </div>
@@ -34,10 +36,19 @@ export class App extends React.Component {
             }
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            
           </div>
 
         </div>
+
+        <div className="">
+          {auth.isAuthenticated &&
+          <Route path="/" component={Home} />
+          }
+        </div>
       </Router>
+     
+    
     )
   }
 }

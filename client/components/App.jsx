@@ -6,6 +6,8 @@ import Login from './Login'
 import Register from './Register'
 import Nav from './Nav'
 import Home from './Home'
+import Employers from './Employers'
+import Candidates from './Candidates'
 
 import { checkAuth } from '../actions/auth'
 
@@ -42,9 +44,13 @@ export class App extends React.Component {
         </div>
 
         <div className="">
-          {auth.isAuthenticated &&
+          {auth.isAuthenticated && (
+            <>
           <Route path="/" component={Home} />
-          }
+          <Route exact path="/employers" component={Employers} />
+          <Route exact path="/candidates" component={Candidates} />
+          </>
+          )}
         </div>
       </Router>
      

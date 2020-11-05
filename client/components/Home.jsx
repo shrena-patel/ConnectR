@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Employers from './Employers'
+import Candidates from './Candidates'
 
 class Home extends React.Component {
 
@@ -9,19 +12,25 @@ class Home extends React.Component {
                 <h1 className="header has-text-centered">Welcome to ConnectR!</h1>
                 
                 <div className="home-buttons">
-                    <button className="button is-link is-light">
-                        <span className="icon">
-                            <i className="far fa-building"></i>
-                        </span>
-                        <span>Employers</span>
-                    </button>
+
+                    <Link to="/employers">
+                        <button className="button is-link is-light is-rounded is-outlined">
+                            <span className="icon">
+                                <i className="far fa-building"></i>
+                            </span>
+                            <span>Employers</span>
+                        </button>
+                    </Link>
                     
-                    <button className="button is-link is-light">
-                        <span className="icon">
-                            <i className="fas fa-search"></i>
-                        </span>
-                        <span>Job Seekers</span>
-                    </button>
+                    <Link to="/candidates">
+                        <button className="button is-link is-light is-rounded is-outlined">
+                            <span className="icon">
+                                <i className="fas fa-search"></i>
+                            </span>
+                            <span>Job Seekers</span>
+                        </button>
+                    </Link>
+
                 </div>
             </>
         )

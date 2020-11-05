@@ -20,14 +20,35 @@ $family-sans-serif: "Lato", sans-serif;
     margin-top: 2rem;
 }
 
+.intro-content {
+    text-align: center;
+    margin: 2em 0;
+}
+
 .home-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
    justify-content: space-evenly;
     align-items: center;
     margin-top: 2rem;
 }
 
 .button + .button {
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-button {
+    margin-top: 2em;
+}
+
+.card {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.icon {
+    margin-bottom: 0.25em;
 }

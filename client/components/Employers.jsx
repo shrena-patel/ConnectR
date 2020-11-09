@@ -1,12 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { initCandidate } from '../actions/candidates'
+import { getAllCandidates } from '../apis/candidates'
 
 class Employers extends React.Component {
 
+    
+
+    componentDidMount() {
+        getAllCandidates()
+            .then(candidate => 
+                (this.props.dispatch(initCandidate(candidate))))
+    }
+  
+    
     render () {
         return (
             <>
-            
+            {console.log(this.props.candidates)}
+            <div className="main">
             <div className="intro-content">
                 <h1 className="title is-5">Employers</h1>
                 <p className="subtitle is-6">Navigate left and right to view available candidates</p>
@@ -38,6 +50,7 @@ class Employers extends React.Component {
                         </div>
                     
                 </div>
+                </div>
             </>
     
         )
@@ -45,4 +58,8 @@ class Employers extends React.Component {
     }
 }
 
-export default Employers
+function mapStateToProps(globalState) {
+    return { candidates: globalState.candidates }
+}
+
+export default connect(mapStateToProps)(Employers)

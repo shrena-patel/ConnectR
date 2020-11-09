@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+
 
 class Candidates extends React.Component {
 
+   
     render () {
         return (
             <>
-            
+            <div className="main">
             <div className="intro-content">
                 <h1 className="title is-5">Job Seekers</h1>
                 <p className="subtitle is-6">Navigate left and right to view companies that are hiring</p>
@@ -36,6 +39,7 @@ class Candidates extends React.Component {
                             <button className="contact-button button is-primary is-light is-rounded is-outlined">Get in contact</button>
                         </div>
                     
+                </div>
                 </div>
             </>
     

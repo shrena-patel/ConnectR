@@ -15,9 +15,12 @@ class Employers extends React.Component {
   
     
     render () {
+        const candidateOne = this.props.candidates[0]
+        console.log(candidateOne)
+
         return (
             <>
-            {console.log(this.props.candidates)}
+            
             <div className="main">
             <div className="intro-content">
                 <h1 className="title is-5">Employers</h1>
@@ -33,20 +36,27 @@ class Employers extends React.Component {
                             </figure>
                         </div>
                     </div>
+
                     <div className="media-content">
-                            <p className="title is-4">role seeking</p>
-                            <p className="subtitle is-6">current role</p>
-                            <p className="subtitle is-6">years experience</p>
-                            <p className="subtitle is-6">location</p>
-                            <p className="subtitle is-6">qualifications</p>
-                            <p className="subtitle is-6">work rights</p>
-                        </div>
+                    
+                        {/* <div className="card-text">
+                            <p className="title is-4">{candidateOne.roleSeeking}</p>
+                            <p className="subtitle is-6">{candidateOne.currentRole}</p>
+                            <p className="subtitle is-6">{candidateOne.yearsExperience}</p>
+                            <p className="subtitle is-6">{candidateOne.location}</p>
+                            <p className="subtitle is-6">{candidateOne.qualifications}</p>
+                            <p className="subtitle is-6">{candidateOne.workRights}</p>
+                        </div> */}
+                    </div>
+
                 </div>
 
                         <div className="content">
                             
-                       
-                            <button className="contact-button button is-primary is-light is-rounded is-outlined">Get in contact</button>
+                        <div className="icon-buttons">
+                            <a href="mailto:tom@consciousrecruitment.co.nz?subject=I'm interested in this candidate"><button className="contact-button button is-primary is-light is-rounded is-outlined"><i className="far fa-paper-plane"></i></button></a>
+                            <button className="contact-button button is-primary is-light is-rounded is-outlined"><i className="far fa-star"></i></button>
+                        </div>
                         </div>
                     
                 </div>

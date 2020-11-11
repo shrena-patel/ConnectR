@@ -13,6 +13,7 @@ $family-sans-serif: "Lato", sans-serif;
 
 * {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .header {
@@ -41,9 +42,15 @@ $family-sans-serif: "Lato", sans-serif;
     margin-top: 2em;
 }
 
+.icon-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .card {
-    border: 1px solid grey;
+    border: 1px solid rgb(235, 235, 235);
     border-radius: 25px;
+    box-shadow: 1px 12px 10px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -60,4 +67,5 @@ $family-sans-serif: "Lato", sans-serif;
 
 .icon {
     margin-bottom: 0.25em;
+    color: grey;
 }

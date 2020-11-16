@@ -45,6 +45,7 @@ $family-sans-serif: "Lato", sans-serif;
 .icon-buttons {
     display: flex;
     justify-content: space-evenly;
+    color: #70C1B3;
 }
 
 .card {
@@ -54,8 +55,15 @@ $family-sans-serif: "Lato", sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2em 0;
-    width: 70%;
+    padding: 2em 0.5em;
+    margin-bottom: 3em;
+    width: 70%; 
+    background-color: #B2DBBF;
+    color: white;
+}
+
+.card-text {
+    color: white;
 }
 
 .main {
@@ -67,5 +75,17 @@ $family-sans-serif: "Lato", sans-serif;
 
 .icon {
     margin-bottom: 0.25em;
-    color: grey;
+    color: #70C1B3;
+}
+
+.hero-body {
+    background-color: #70C1B3;
+}
+
+.home-button {
+    color: #1F4741;
+}
+
+.employer-subtitle {
+    text-transform: uppercase;
 }

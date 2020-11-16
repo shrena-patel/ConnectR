@@ -14,7 +14,7 @@ class Home extends React.Component {
                 <div className="home-buttons">
 
                     <Link to="/employers">
-                        <button className="button is-link is-light is-rounded is-outlined">
+                        <button className="button home-button is-rounded is-outlined">
                             <span className="icon">
                                 <i className="far fa-building"></i>
                             </span>
@@ -23,7 +23,7 @@ class Home extends React.Component {
                     </Link>
                     
                     <Link to="/candidates">
-                        <button className="button is-link is-light is-rounded is-outlined">
+                        <button className="button home-button is-rounded is-outlined">
                             <span className="icon">
                                 <i className="fas fa-search"></i>
                             </span>

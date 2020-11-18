@@ -11,9 +11,8 @@ class Candidates extends React.Component {
             <>
             <div className="main">
             <div className="intro-content">
-                <h1 className="title is-5">Job Seekers</h1>
-                <p className="subtitle is-6">Navigate left and right to view companies that are hiring</p>
-            </div>
+                    <p className="employer-subtitle">View companies that are hiring below</p>
+                </div>
                 <div className="card">
                     
                 <div className="card-content">
